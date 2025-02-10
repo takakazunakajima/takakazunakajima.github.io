@@ -6,7 +6,7 @@ const obstacle = document.getElementById('obstacle');
 // プレイヤーの動き
 let isJumping = false;
 let gravity = 1;
-let jumpStrength = 400;
+let jumpStrength = 4000;
 let playerPosition = 0; // 高さの初期位置
 let obstaclePosition = gameArea.offsetWidth; // 障害物の初期位置
 
