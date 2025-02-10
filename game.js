@@ -26,13 +26,13 @@ document.addEventListener('keydown', (e) => {
             playerPosition -= gravity;
             player.style.bottom = `${playerPosition}px`;
           }
-        }, 20);
+        }, jumpStrength);
       } else {
         playerPosition += gravity;
         jumpHeight -= gravity;
         player.style.bottom = `${playerPosition}px`;
       }
-    }, 20);
+    }, jumpStrength);
   }
 });
 
