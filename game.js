@@ -5,8 +5,8 @@ const obstacle = document.getElementById('obstacle');
 
 // プレイヤーの動き
 let isJumping = false;
-let gravity = 1;
-let jumpStrength = 120;
+let gravity = 3;
+let jumpStrength = 100;
 let playerPosition = 0; // 高さの初期位置
 let obstaclePosition = gameArea.offsetWidth; // 障害物の初期位置
 
@@ -26,13 +26,13 @@ document.addEventListener('keydown', (e) => {
             playerPosition -= gravity;
             player.style.bottom = `${playerPosition}px`;
           }
-        }, jumpStrength);
+        }, 20);
       } else {
         playerPosition += gravity;
         jumpHeight -= gravity;
         player.style.bottom = `${playerPosition}px`;
       }
-    }, jumpStrength);
+    }, 20);
   }
 });
 
